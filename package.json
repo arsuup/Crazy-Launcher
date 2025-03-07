@@ -1,8 +1,8 @@
 {
-    "name": "Selvania-Launcher",
-    "preductname": "Selvania Launcher",
+    "name": "CrazyLauncher",
+    "preductname": "Crazy Launcher",
     "version": "2.0.7",
-    "description": "Launcher Mincraft pour le serveur Selvania",
+    "description": "Launcher Mincraft",
     "main": "src/app.js",
     "author": {
         "name": "arsuup",
@@ -39,6 +39,6 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/arsuup/Crazy-Launcher.git"
+        "url": "git+https://github.com/arsuup/Crazy-Launcher/tree/master.git"
     }
 }
