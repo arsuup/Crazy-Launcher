@@ -20,7 +20,7 @@
     width: 25rem;
     height: 3rem;
     color: var(--color);
-    border-radius: 10px;
+    border-radius: 5px;
     margin-top: 3rem;
     padding: 1rem;
     text-align: center;
@@ -77,6 +77,8 @@
     width: 100%;
     height: calc(100% - 80px - 8rem);
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /*******************************************************************************
@@ -90,6 +92,7 @@
     flex-direction: column;
     align-items: center;
     width: 85%;
+    max-width: 900px;
     height: 100%;
 }
 
@@ -161,49 +164,6 @@
 
 /*******************************************************************************
  *                                                                             *
- * social server                                                               *
- *                                                                             *
- ******************************************************************************/
-
-.social-tab {
-    position: absolute;
-    display: flex;
-    bottom: 0;
-    right: 0;
-    width: 15%;
-    height: calc(80% - 1rem);
-    justify-content: center;
-    margin-bottom: 1rem;
-}
-
-.social-list {
-    border-radius: 10px;
-    height: 100%;
-}
-
-.social-block {
-    display: flex;
-    background: var(--background-transparent);
-    width: 90px;
-    height: 90px;
-    margin-bottom: 1rem;
-    border-radius: 10px;
-    font-size: 2rem;
-    cursor: pointer;
-    align-items: center;
-    justify-content: center;
-}
-
-.social-block .icon-social {
-    pointer-events: none;
-    background-repeat: no-repeat;
-    height: 55%;
-    width: 55%;
-    filter: var(--svg-color);
-}
-
-/*******************************************************************************
- *                                                                             *
  * sidebar                                                                     *
  *                                                                             *
  ******************************************************************************/
@@ -234,7 +194,6 @@
     height: 3rem;
     width: 3rem;
     pointer-events: none;
-    border-radius: 15px;
 }
 
 .player-menu {
@@ -255,14 +214,17 @@
     align-items: center;
     position: relative;
     border: solid 3px var(--element-color);
-    border-radius: 15px;
     height: 3.2rem;
     padding-right: 1.9rem;
+    transition: 0.1s;
+    cursor: pointer;
+}
+.play-instance:hover{
+    background-color: rgba(255, 255, 255, 0.1);
 }
 
 .play-btn {
     border: none;
-    border-radius: 10px;
     background: none;
     color: var(--color);
     font-size: 2rem;
@@ -277,14 +239,18 @@
     position: absolute;
     right: -3;
     top: -2;
-    color: var(--element-color);
+    color: var(--light-color);
     font-size: 1rem;
     height: calc(100% - 1px);
-    border: solid 3px var(--element-color);
+    border: solid 3px var(--light-color);
     text-align: center;
-    border-radius: 15px;
+    border-radius: 5px;
     padding: 0 0.5rem;
     cursor: pointer;
+    transition: 0.1s;
+}
+.instance-select:hover{
+    background-color: rgba(255, 255, 255, 0.1);
 }
 
 .instance-select:before {
@@ -318,8 +284,9 @@
     width: 3rem;
     height: 3rem;
     font-size: 3rem;
-    color: var(--element-color);
+    color: var(--light-color);
     margin: 0 1.5rem;
+    cursor: pointer;
 }
 
 .instance-popup {
@@ -338,7 +305,7 @@
 .instances-tab {
     position: relative;
     background: var(--background);
-    border-radius: 10px;
+    border-radius: 5px;
     padding: 1rem 3rem;
 }
 
@@ -350,7 +317,7 @@
     background: var(--shadow);
     height: 30px;
     width: 30px;
-    border-radius: 10px;
+    border-radius: 5px;
     align-items: center;
     justify-content: center;
 }
@@ -362,11 +329,16 @@
 
 .instance-elements {
     background: var(--background-element);
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
     border-radius: 10px;
     margin: 0.5rem 0;
     font-size: 1.5rem;
     cursor: pointer;
+    transition: 0.1s;
+    height: 2.5rem;
 }
 
 .instance-elements:hover {
