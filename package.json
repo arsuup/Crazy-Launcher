@@ -9,12 +9,12 @@
         "email": "arsuup.mail@gmail.com",
         "url": "https://github.com/arsuup"
     },
-    "url": "http://launcher.arsuup.fr",
+    "url": "http://launcher.luuxis.fr",
     "scripts": {
         "start": "cross-env-shell NODE_ENV=dev electron .",
         "dev": "cross-env-shell DEV_TOOL=open nodemon --exec npm start",
         "build": "node build.js --obf=true --build=platform",
-        "icon": "node build.js --icon=https://raw.githubusercontent.com/arsuup/Crazy-Launcher/refs/heads/main/.github/Logo.png"
+        "icon": "node build.js --icon=https://raw.githubusercontent.com/arsuup/Crazy-Launcher/refs/heads/master/.github/Logo.png"
     },
     "license": "CCANC",
     "nodemonConfig": {
