@@ -1,20 +1,20 @@
 {
-    "name": "CrazyLauncher",
+    "name": "crazy-launcher",
     "preductname": "Crazy Launcher",
     "version": "2.0.7",
-    "description": "Launcher Mincraft",
+    "description": "Launcher Mincraft fait par Arsuup",
     "main": "src/app.js",
     "author": {
         "name": "arsuup",
         "email": "contact@arsuup.fr",
         "url": "https://github.com/arsuup"
     },
-    "url": "http://arsuup.unaux.com/",
+    "url": "http://localhost",
     "scripts": {
         "start": "cross-env-shell NODE_ENV=dev electron .",
         "dev": "cross-env-shell DEV_TOOL=open nodemon --exec npm start",
         "build": "node build.js --obf=true --build=platform",
-        "icon": "node build.js --icon=https://raw.githubusercontent.com/luuxis/Selvania-Launcher/master/src/assets/images/icon.png"
+        "icon": "node build.js --icon=https://raw.githubusercontent.com/arsuup/Crazy-Launcher/refs/heads/master/src/assets/images/icon.png"
     },
     "license": "CCANC",
     "nodemonConfig": {
