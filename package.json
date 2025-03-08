@@ -9,7 +9,7 @@
         "email": "contact@arsuup.fr",
         "url": "https://github.com/arsuup"
     },
-    "url": "http://localhost",
+    "url": "https://github.com/arsuup/Crazy-Launcher/tree/WEB-Folder",
     "scripts": {
         "start": "cross-env-shell NODE_ENV=dev electron .",
         "dev": "cross-env-shell DEV_TOOL=open nodemon --exec npm start",
