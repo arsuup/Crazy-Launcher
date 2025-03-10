@@ -1,11 +1,11 @@
 {
     "name": "crazy-launcher",
     "preductname": "Crazy Launcher",
-    "version": "0.1.5",
+    "version": "0.1.6",
     "description": "Launcheur Minecraft. (prout)",
     "main": "src/app.js",
     "author": {
-        "name": "luuxis, Inc.",
+        "name": "luuxis, arsuup Inc.",
         "email": "contact@luuxis.fr",
         "url": "https://github.com/luuxis"
     },
