@@ -5,6 +5,14 @@
     align-items: center;
 }
 
+.home-upper{
+    width: 100vw;
+    height: calc(100vh - 90px);
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+}
+
 /*******************************************************************************
  *                                                                             *
  * Status server                                                               *
@@ -12,16 +20,17 @@
  ******************************************************************************/
 
 .status-server {
+    backdrop-filter: blur(10px);
     position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: var(--background);
+    background: var(--background-transparent);
     width: 25rem;
     height: 3rem;
     color: var(--color);
-    border-radius: 10px;
-    margin-top: 3rem;
+    border-radius: 25px;
+    margin-top: 5rem;
     padding: 1rem;
     text-align: center;
 }
@@ -64,7 +73,7 @@
     top: 10px;
     right: 10px;
     border-radius: 15px;
-    border: solid 5px var(--background);
+    border: solid 5px var(--shadow);
     background: #1AC707;
 }
 
@@ -74,9 +83,18 @@
 
 .home-bottom {
     position: relative;
-    width: 100%;
-    height: calc(100% - 80px - 8rem);
+    width: 70%;
+    height: 100%;
     display: flex;
+    justify-content: flex-end;
+}
+
+.home-upper2{
+    height: 100%;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
 }
 
 /*******************************************************************************
@@ -86,17 +104,19 @@
  ******************************************************************************/
 
 .new-tab {
+    /* background-color: #ff00c3; */
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 85%;
+    width: 100%;
     height: 100%;
 }
 
 .titre-tab-new {
-    margin-top: 1rem;
-    font-size: 2rem;
-    padding: 0.5rem 1rem;
+    backdrop-filter: blur(10px);
+    margin-top: 4rem;
+    font-size: 1.74rem;
+    padding: 0.5rem 1.5rem;
     border-radius: 2rem;
     background: var(--background-transparent);
     color: var(--color);
@@ -161,54 +181,12 @@
 
 /*******************************************************************************
  *                                                                             *
- * social server                                                               *
- *                                                                             *
- ******************************************************************************/
-
-.social-tab {
-    position: absolute;
-    display: flex;
-    bottom: 0;
-    right: 0;
-    width: 15%;
-    height: calc(80% - 1rem);
-    justify-content: center;
-    margin-bottom: 1rem;
-}
-
-.social-list {
-    border-radius: 10px;
-    height: 100%;
-}
-
-.social-block {
-    display: flex;
-    background: var(--background-transparent);
-    width: 90px;
-    height: 90px;
-    margin-bottom: 1rem;
-    border-radius: 10px;
-    font-size: 2rem;
-    cursor: pointer;
-    align-items: center;
-    justify-content: center;
-}
-
-.social-block .icon-social {
-    pointer-events: none;
-    background-repeat: no-repeat;
-    height: 55%;
-    width: 55%;
-    filter: var(--svg-color);
-}
-
-/*******************************************************************************
- *                                                                             *
  * sidebar                                                                     *
  *                                                                             *
  ******************************************************************************/
 
 .sidebar {
+    backdrop-filter: blur(10px);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -230,11 +208,9 @@
     background: url('../../images/default/setve.png'), no-repeat;
     background-size: cover;
     image-rendering: pixelated;
-    transition: var(--transition);
     height: 3rem;
     width: 3rem;
     pointer-events: none;
-    border-radius: 15px;
 }
 
 .player-menu {
@@ -250,21 +226,24 @@
 }
 
 .play-instance {
+    background-color: #1cc50a;
+    border-radius: 2rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
     position: relative;
-    border: solid 3px var(--element-color);
-    border-radius: 15px;
     height: 3.2rem;
     padding-right: 1.9rem;
+    border: #106d058f solid 5px;
+    cursor: pointer;
+    transition: 0.1s ease-out;
 }
 
 .play-btn {
     border: none;
     border-radius: 10px;
     background: none;
-    color: var(--color);
+    color: white;
     font-size: 2rem;
     font-weight: bolder;
     padding: 0 1.5rem;
@@ -272,19 +251,27 @@
 }
 
 .instance-select {
+    background-color: var(--play);
     display: flex;
     align-items: center;
+    justify-content: center;
     position: absolute;
-    right: -3;
-    top: -2;
-    color: var(--element-color);
+    right: 0;
+    top: 0;
+    color: white;
     font-size: 1rem;
     height: calc(100% - 1px);
-    border: solid 3px var(--element-color);
-    text-align: center;
-    border-radius: 15px;
+    width: 15%;
+    border-radius: 2rem;
+    border-bottom-left-radius: 0px;
+    border-top-left-radius: 0px;
     padding: 0 0.5rem;
     cursor: pointer;
+    transition: 0.1s ease-out;
+}
+
+.instance-select:hover {
+    background-color: var(--button-2);
 }
 
 .instance-select:before {
@@ -305,24 +292,29 @@
 
 .progress-bar::-webkit-progress-bar {
     background-color: var(--background);
-    border: solid 1px var(--element-color);
+    border: solid 1px var(--color);
     border-radius: 10px;
 }
 
 .progress-bar::-webkit-progress-value {
-    background-color: var(--element-color);
+    background-color: var(--color);
     border-radius: 10px;
 }
 
 .settings-btn {
+    border: 4px solid black;
+    border-radius: 50px;
+    background: black;
     width: 3rem;
     height: 3rem;
     font-size: 3rem;
-    color: var(--element-color);
+    color: #ffffff;
     margin: 0 1.5rem;
+    cursor: pointer;
 }
 
 .instance-popup {
+    backdrop-filter: blur(20px);
     position: absolute;
     display: none;
     width: 100%;
@@ -337,9 +329,9 @@
 
 .instances-tab {
     position: relative;
-    background: var(--background);
+    background: var(--color2);
     border-radius: 10px;
-    padding: 1rem 3rem;
+    padding: 1rem 2rem;
 }
 
 .close-popup {
@@ -350,23 +342,29 @@
     background: var(--shadow);
     height: 30px;
     width: 30px;
-    border-radius: 10px;
+    border-radius: 5px;
     align-items: center;
     justify-content: center;
+    transition: 0.1s ease-out;
 }
 
 .instances-tab p {
-    margin-top: 1.5rem;
+    margin-top: 0.9rem;
     font-size: 2rem;
 }
 
 .instance-elements {
     background: var(--background-element);
     text-align: center;
-    border-radius: 10px;
-    margin: 0.5rem 0;
+    border-radius: 20px;
+    margin: 0.5rem 0rem;
+    height: 40px;
     font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     cursor: pointer;
+    transition: 0.1s ease-out;
 }
 
 .instance-elements:hover {

@@ -1,7 +1,7 @@
 {
-    "name": "Crazy-Launcher",
+    "name": "crazy-launcher",
     "preductname": "Crazy Launcher",
-    "version": "2.1.0",
+    "version": "3.0.0",
     "description": "Launcher Mincraft",
     "main": "src/app.js",
     "author": {
@@ -14,7 +14,7 @@
         "start": "cross-env-shell NODE_ENV=dev electron .",
         "dev": "cross-env-shell DEV_TOOL=open nodemon --exec npm start",
         "build": "node build.js --obf=true --build=platform",
-        "icon": "node build.js --icon=https://raw.githubusercontent.com/arsuup/Crazy-Launcher/blob/master/src/assets/images/icon.png"
+        "icon": "node build.js --icon=https://raw.githubusercontent.com/arsuup/Crazy-Launcher/master/src/assets/images/icon.png"
     },
     "license": "CCANC",
     "nodemonConfig": {

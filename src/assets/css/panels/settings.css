@@ -4,9 +4,10 @@
 }
 
 .nav-settings {
-    width: 20%;
+    backdrop-filter: blur(10px);
+    width: 30%;
     height: 100%;
-    background: var(--background);
+    background: var(--background-transparent);
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -27,7 +28,7 @@
 }
 
 .nav-box #save {
-    border: solid 4px var(--background-element);
+    /* border: solid 4px var(--background-element); */
     margin: 3rem;
 }
 
@@ -40,6 +41,7 @@
     text-align: center;
     margin: 0.5rem 0;
     cursor: pointer;
+    transition: 0.1s ease-out;
 }
 
 .active-settings-BTN {
@@ -52,15 +54,15 @@
     flex-direction: column;
     align-items: center;
     right: 0;
-    width: 80%;
+    width: 70%;
     height: calc(100% - 26px);
     opacity: 0;
     pointer-events: none;
-
 }
 
 .settings-elements-box {
-    background: var(--background-element);
+    backdrop-filter: blur(10px);
+    background: var(--background-transparent);
     width: 80%;
     border-radius: 10px;
     padding: 1.5rem 2rem;
@@ -78,6 +80,7 @@
 }
 
 .titre-tab {
+    backdrop-filter: blur(10px);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -119,7 +122,8 @@
 }
 
 .account {
-    background: var(--background-element);
+    backdrop-filter: blur(10px);
+    background: var(--background-transparent);
     border: solid 4px var(--background-element);
     display: flex;
     justify-content: space-around;
@@ -130,13 +134,10 @@
     border-radius: 15px;
 }
 
-.account-select {
-    border: solid 4px var(--element-color);
-}
-
 .accounts-list #add {
     justify-content: center;
     cursor: pointer;
+    background: var(--color2);
 }
 
 .add-profile {
@@ -374,6 +375,7 @@
     padding: calc(0.1rem + 4px) calc(1.5rem + 4px);
     border-radius: 15px;
     cursor: pointer;
+    transition: 0.1s ease-out;
 }
 
 .theme-btn-clair {
@@ -406,6 +408,7 @@
     border-radius: 15px;
     padding: 1rem;
     cursor: pointer;
+        transition: 0.1s ease-out;
 }
 
 .active-close {
