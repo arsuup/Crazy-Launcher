@@ -2,7 +2,7 @@
 @import 'theme.css';
 
 body {
-    background-color: var(--background);
+    background-color: var(--color2);
     font-family: "Poppins";
     letter-spacing: 0px;
 }
