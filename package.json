@@ -1,7 +1,7 @@
 {
     "name": "crazylauncher",
     "preductname": "Crazy Launcher",
-    "version": "3.1.2",
+    "version": "3.1.5",
     "description": "Launcher Mincraft",
     "main": "src/app.js",
     "author": {
@@ -9,7 +9,7 @@
         "email": "contact@luuxis.fr",
         "url": "https://github.com/luuxis"
     },
-    "url": "http://localhost/launcher",
+    "url": "http://n1lx.duckdns.org:2042/launcher/",
     "scripts": {
         "start": "cross-env-shell NODE_ENV=dev electron .",
         "dev": "cross-env-shell DEV_TOOL=open nodemon --exec npm start",
