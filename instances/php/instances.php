@@ -1,9 +1,9 @@
 <?php
 $instance['hypixel'] = array_merge($instance['hypixel'], array(
-    "loadder" => array(
+    "loader" => array(
         "minecraft_version" => "1.8.9",
-        "loadder_type" => "forge",
-        "loadder_version" => "latest"
+        "loader_type" => "forge",
+        "loader_version" => "latest"
     ),
     "verify" => true,
     "ignored" => array(
@@ -28,10 +28,10 @@ $instance['hypixel'] = array_merge($instance['hypixel'], array(
 ));
 
 $instance['PokeMoonX'] = array_merge($instance['PokeMoonX'], array(
-    "loadder" => array(
+    "loader" => array(
         "minecraft_version" => "1.16.5",
-        "loadder_type" => "forge",
-        "loadder_version" => "1.16.5-36.2.35"
+        "loader_type" => "forge",
+        "loader_version" => "1.16.5-36.2.35"
     ),
     "verify" => false,
     "ignored" => array(),

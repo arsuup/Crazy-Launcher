@@ -1,3 +1,5 @@
 RewriteEngine On
-RewriteRule ^(launcher/news-launcher/config.ini) - [F,L,NC]
 Options +Indexes
+
+RewriteRule ^config$ launcher/config-launcher/config.php [L]
+RewriteRule ^articles$ launcher/news-launcher/news.php [L]
