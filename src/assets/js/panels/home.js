@@ -13,7 +13,6 @@ class Home {
         this.config = config;
         this.db = new database();
         this.news()
-        this.socialLick()
         this.instancesSelect()
         document.querySelector('.settings-btn').addEventListener('click', e => changePanel('settings'))
     }
@@ -30,7 +29,7 @@ class Home {
                     <div class="news-header">
                         <img class="server-status-icon" src="assets/images/icon/icon.png">
                         <div class="header-text">
-                            <div class="title">Aucun news n'ai actuellement disponible.</div>
+                            <div class="title">Aucun news n'est actuellement disponible.</div>
                         </div>
                         <div class="date">
                             <div class="day">${date.day}</div>
@@ -90,16 +89,6 @@ class Home {
                     </div>`
             newsElement.appendChild(blockNews);
         }
-    }
-
-    socialLick() {
-        let socials = document.querySelectorAll('.social-block')
-
-        socials.forEach(social => {
-            social.addEventListener('click', e => {
-                shell.openExternal(e.target.dataset.url)
-            })
-        });
     }
 
     async instancesSelect() {
