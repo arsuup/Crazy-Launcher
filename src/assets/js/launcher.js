@@ -83,7 +83,11 @@ class Launcher {
         document.querySelector(`.${platform} .frame #close`).addEventListener('click', () => {
             ipcRenderer.send('main-window-close');
         })
+        
     }
+
+
+    /// arrêt à cet endroit 
 
     async initConfigClient() {
         console.log('Initializing Config Client...')

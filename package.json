@@ -1,7 +1,7 @@
 {
-    "name": "Fahran-Launcher",
-    "preductname": "Fahran Launcher",
-    "version": "1.0.1",
+    "name": "tahan",
+    "preductname": "Tahan Launcher",
+    "version": "1.0.2",
     "description": "Launcher Minecraft de con",
     "main": "src/app.js",
     "author": {
@@ -9,7 +9,7 @@
         "email": "contact@luuxis.fr",
         "url": "https://github.com/luuxis"
     },
-    "url": "http://13.53.149.206:80/launcher/",
+    "url": "http://13.53.149.206/minecraft-java-core/",
     "scripts": {
         "start": "cross-env-shell NODE_ENV=dev electron .",
         "dev": "cross-env-shell DEV_TOOL=open nodemon --exec npm start",
@@ -31,7 +31,7 @@
     },
     "devDependencies": {
         "cross-env": "^10.1.0",
-        "electron": "^40.0.0",
+        "electron": "^30.5.1",
         "electron-builder": "^26.0.12",
         "javascript-obfuscator": "^5.1.0",
         "jimp": "^1.6.0",
@@ -40,6 +40,6 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/arsuup/Fahran-Launcher.git"
+        "url": "git+https://github.com/arsuup/Tahan-Launcher.git"
     }
 }
