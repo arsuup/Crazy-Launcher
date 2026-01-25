@@ -2,7 +2,7 @@
     "name": "tahan",
     "preductname": "Tahan Launcher",
     "version": "1.0.2",
-    "description": "Launcher Minecraft de con",
+    "description": "Launcher Minecraft",
     "main": "src/app.js",
     "author": {
         "name": "Arsuup, luuxis, Inc.",
