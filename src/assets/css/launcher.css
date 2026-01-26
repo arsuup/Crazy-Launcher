@@ -73,7 +73,7 @@ input::-webkit-inner-spin-button {
     position: relative;
     display: table-cell;
     width: 20px;
-    height: 26px;
+    height: 28px;
     transition: color .2s, background-color .2s;
 }
 
@@ -174,9 +174,9 @@ input::-webkit-inner-spin-button {
 }
 
 .popup-button {
-    background: none;
+    background: var(--background-element);
+    border: none;
     color: var(--color);
-    border: solid 2px var(--element-color);
     padding: 0.3rem 4rem;
     font-size: inherit;
     font-weight: 800;

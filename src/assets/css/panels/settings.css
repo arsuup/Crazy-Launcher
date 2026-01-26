@@ -1,10 +1,11 @@
 .settings .container {
     display: flex;
     height: 100%;
+    font-family: 'Archivo';
 }
 
 .nav-settings {
-    width: 20%;
+    width: 25%;
     height: 100%;
     background: var(--background);
     display: flex;
@@ -15,7 +16,7 @@
 }
 
 .nav-settings p {
-    font-size: 60%;
+    font-size: 70%;
     margin-top: 80px;
 }
 
@@ -24,6 +25,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    font-weight: 500;
 }
 
 .nav-box #save {
@@ -31,15 +33,24 @@
     margin: 3rem;
 }
 
+.nav-box #save:hover {
+    border: solid 1px var(--dark-color);
+}
+
 .nav-settings-btn {
     font-size: 50%;
     border: solid 1px var(--background-element);
     transition: var(--transition);
-    padding: 5px 10px;
+    padding: 10px 10px;
     width: 70%;
     text-align: center;
     margin: 0.5rem 0;
     cursor: pointer;
+}
+
+.nav-settings-btn:hover{
+    background: var(--dark-color);
+    border: solid 1px var(--dark-color);
 }
 
 .active-settings-BTN {
@@ -52,7 +63,7 @@
     flex-direction: column;
     align-items: center;
     right: 0;
-    width: 80%;
+    width: 75%;
     height: calc(100% - 26px);
     opacity: 0;
     pointer-events: none;
@@ -69,6 +80,7 @@
 
 .setting-text {
     font-size: 0.8rem;
+    font-weight: 100;
 }
 
 .active-container-settings {
@@ -82,6 +94,7 @@
     justify-content: center;
     align-items: center;
     font-size: 2rem;
+    font-weight: 1000;
     margin: 1.5rem 0;
     padding: 0.5rem 2rem;
     text-align: center;
@@ -279,9 +292,8 @@
     background: var(--shadow);
     border: none;
     color: var(--color);
-    padding: 0.5rem 1rem;
-    margin-right: 9vw;
-    width: 50%;
+    padding: 0.8rem 1rem;
+    width: 20rem;
 }
 
 .java-path-input-file {
@@ -294,7 +306,8 @@
 }
 
 .java-path-btn {
-    padding: 0.3rem 1rem;
+    padding: 0.7rem 2rem;
+    width: max-content;
     background: var(--background-element);
     margin: 0 1rem;
     cursor: pointer;
@@ -315,7 +328,7 @@
     background: var(--shadow);
     border: none;
     color: var(--color);
-    padding: 0.5rem 1rem;
+    padding: 0.8rem 2rem;
     text-align: center;
     width: 6rem;
 }
@@ -331,7 +344,7 @@
 }
 
 .size-btn {
-    padding: 0.2rem 0.9rem;
+    padding: 0.7rem 2rem;
     background: var(--background-element);
     margin: 0 4rem;
     cursor: pointer;
@@ -347,17 +360,17 @@
     background: var(--shadow);
     border: none;
     color: var(--color);
-    padding: 0.5rem 1rem;
+    padding: 0.8rem 1rem;
     text-align: center;
-    width: 4rem;
+    width: 2.5rem;
     margin-left: 6.2rem;
-    margin-right: 1rem;
+    margin-right: 0.4rem;
 }
 
 .max-files-btn {
-    padding: 0.3rem 1rem;
+    padding: 0.7rem 2rem;
     background: var(--background-element);
-    margin: 0 6rem;
+    margin: 0 4rem;
     cursor: pointer;
 }
 
@@ -368,16 +381,19 @@
 }
 
 .theme-btn-clair {
+    padding: 0.7rem 2rem;
     background: var(--light-color);
     color: var(--dark-color);
 }
 
 .theme-btn-sombre {
+    padding: 0.7rem 2rem;
     background: var(--dark-color);
     color: var(--light-color);
 }
 
 .theme-btn-auto {
+    padding: 0.7rem 2rem;
     margin-left: 10vw;
     background: var(--background-element);
     color: var(--color);
@@ -390,6 +406,7 @@
 .close-btn {
     font-size: 0.95rem;
     width: 200px;
+    height: 2rem;
     text-align: center;
     padding: 1rem;
     cursor: pointer;
